@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+<head lang="vi">
+  <meta charset="utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="indexcss.css">
+  <script src="chartline.js"></script>
+	<title></title>
+</head>
+<body class="container-fluid">
+
+  <nav  class="row navbar navbar-inverse">
+    <div class="container-fluid">
+      <div  class="navbar-header">
+        
+        <a style="color: white" class="navbar-brand" href="index.html">ADMIN PROJECT</a>
+      </div>
+
+        <ul class="nav navbar-nav navbar-right">
+    	  <li class="dropdown hidden-phone">
+              <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                <i style="color: white" class="glyphicon glyphicon-bell"></i>
+               <sup> <span  style="background-color:  red; font-size: 10px" class="badge"> 2+</span> </sup>
+
+              </a>
+              <ul class="dropdown-menu notifications">
+                <li class="dropdown-menu-title">
+                  <span>You have 11 notifications</span>
+                 
+                </li> 
+                <li>
+                 <a href="#">
+                    <span ><i class="glyphicon glyphicon-user"></i></span>
+                    <span class="message">New user registration</span>
+                    <span class="time">1 min</span> 
+                 </a>
+                 </li>
+
+                <li>
+                  <a href="#">
+                    <span ><i class="glyphicon glyphicon-envelope"></i></span>
+                    <span class="message">9+ New Message</span>
+                    <span class="time">7 min</span> 
+                   </a>
+               </li>
+                <li>
+                   <a href="#">
+                   <span ><i class="glyphicon glyphicon-comment"></i></span>
+                    <span class="message">New comment</span>
+                    <span class="time">8 min</span> 
+                    </a>
+                 </li>
+                
+                <li>
+                     <a href="#">
+                    <span ><i class="glyphicon glyphicon-heart"></i></span>
+                    <span class="message">106 New Likes</span>
+                    <span class="time">36 min</span> 
+                     </a>
+                </li>
+                <li class="warning">
+                     <a href="#">
+                   <span ><i class="glyphicon glyphicon-shopping-cart"></i></span>
+                    <span class="message">2 items sold</span>
+                    <span class="time">1 hour</span> 
+                      </a>
+                                </li>
+                <li >
+                     <a href="#">
+                    <span ><i class="glyphicon glyphicon-user"></i></span>
+                    <span class="message">User Followers</span>
+                    <span class="time">2 hour</span> 
+                     </a>
+                </li>
+                
+              <li class="dropdown-menu-sub-footer">
+                    <span><i class="glyphicon glyphicon-triangle-bottom"></i></span>
+                    <span>View all notifications</span>
+              </li> 
+              </ul>
+            </li>
+           
+
+            <li class="dropdown hidden-phone"> 
+              <a class="btn dropdown-toggle" data-toggle="dropdown" href="#" style="color: white" href="#">	
+                <span  class="glyphicon glyphicon-envelope " > </span>
+                <sup> <span  style="background-color:  red; font-size: 10px" class="badge"> 9+</span> </sup>
+              </a>
+            
+
+              <ul class="dropdown-menu message">
+                <li class="dropdown-menu-title">
+                  <span>You have 96 message</span>
+                  <span class="glyphicon glyphicon-search" aria-hidden="true" placeholder="Search"></span>
+                 
+                </li> 
+                <li>
+                 <a href="#">
+                    <span ><i class="glyphicon glyphicon-user"></i></span>
+                    <span class="message">New user registration</span>
+                    <span class="time">1 min</span> 
+                 </a>
+                 </li>
+
+                <li>
+                  <a href="#">
+                    <span ><i class="glyphicon glyphicon-comment"></i></span>
+                    <span class="message">New message from Jacker</span>
+                    <span class="time">7 min ago</span> 
+                   </a>
+               </li>
+                <li>
+                   <a href="#">
+                   <span ><i class="glyphicon glyphicon-envelope"></i></span>
+                    <span class="message">Bayer commented on your photo</span>
+                    <span class="time">9 min ago</span> 
+                    </a>
+                 </li>
+                <li>
+                   <a href="#">
+                    <span ><i class="glyphicon glyphicon-comment"></i></span>
+                    <span class="message">New comment from Lisa</span>
+                    <span class="time">16 min ago</span> 
+                    </a>
+                  </li>
+                <li>
+                     <a href="#">
+                    <span ><i class="glyphicon glyphicon-user"></i></span>
+                    <span class="message">New user registration</span>
+                    <span class="time">36 min ago</span> 
+                     </a>
+                </li>
+                <li>
+                     <a href="#">
+                   <span ><i class="glyphicon glyphicon-shopping-cart"></i></span>
+                    <span class="message">2 items sold</span>
+                    <span class="time">1 hour ago</span> 
+                      </a>
+                                </li>
+                <li class="warning">
+                     <a href="#">
+                    <span ><i class="glyphicon glyphicon-user"></i></span>
+                    <span class="message">User deleted account</span>
+                    <span class="time">2 hour</span> 
+                     </a>
+                </li>
+                <li class="warning">
+                   <a href="#">
+                    <span ><i class="glyphicon glyphicon-comment"></i></span>
+                    <span class="message">New comment on your photo</span>
+                    <span class="time">6 hour</span> 
+                     </a>
+               </li>
+              <li>
+                     <a href="#">
+                    <span ><i class="glyphicon glyphicon-comment"></i></span>
+                    <span class="message">New comment from Jisoo</span>
+                    <span class="time">yesterday</span> 
+                     </a>
+              </li>
+              <li>
+                    <a href="#">
+                    <span ><i class="glyphicon glyphicon-user"></i></span>
+                    <span class="message">New user registration</span>
+                    <span class="time">yesterday</span> 
+                    </a>
+              </li>
+              <li class="dropdown-menu-sub-footer">
+                    <span><i class="glyphicon glyphicon-triangle-bottom"></i></span>
+                    <span>ALL MESSAGE</span>
+                    
+              </li> 
+              </ul>
+
+
+
+            </li>
+
+            <li class="dropdown">
+              <a style="color: white" class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                <i class="glyphicon glyphicon-user"></i> Linh Nguyệt
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                
+                </li>
+                <li><a href="profile.html"><i class=" glyphicon glyphicon-user"></i> Profile</a></li>
+                <li><a href="login.html"><i class="glyphicon glyphicon-off"></i> Logout</a></li>
+              </ul>
+            </li>
+       </ul>
+    </div>
+  </nav>
+
+  <div class="row ">
+	   <div class="col-sm-2">
+      <div class="row sidenav">
+        <div class="subnav">
+           <a href="dashboard.html"><span  class="glyphicon glyphicon-home"> Dashboard <i class="fa fa-caret-down"></i></span>    
+
+            </a>
+            <div class="subnav-content">
+              <a href="#">Item manager</a>
+              <a href="#">Product manager</a>
+              
+            </div>
+
+              
+    			 
+       </div>
+
+        
+          <a href="product.html"><span class="glyphicon glyphicon-shopping-cart" >  Product</span>
+          </a>
+
+     
+          <a href="order.html">	<span class="glyphicon glyphicon-credit-card" > Oder</span> 
+
+
+          </a>
+        
+          <a href="#contact"><span  class="glyphicon glyphicon-stats"> Themes</span>     </a>
+        
+          <a href="login.html"><span  class="glyphicon glyphicon-log-out" > SignOut</span>     </a>
+          </a>
+
+       
+       
+      </div>
+    </div>
+  <div class="col-sm-10" >
+    <div class="row">
+    <div class="col-sm-6 col-xs-12">
+      <div  >
+      	
+        <canvas id="pie-chart" width="20px" height="10px"></canvas>
+      </div>
+    </div>
+    <div class="col-sm-6 col-xs-12">
+       <canvas id="line-chart" width="800" height="450"></canvas>
+    </div>
+       
+
+<table >
+  <tr>
+    <th>Khách hàng</th>
+    <th>Liên hệ</th>
+    <th>Thành phố</th>
+  </tr>
+  <tr>
+    <td>Nguyễn Kiều Sao Mai</td>
+    <td>0898234567</td>
+    <td>Quảng Nam</td>
+  </tr>
+  <tr>
+    <td>Phạm Nguyễn Như Nguyệt</td>
+    <td>0121-3456789</td>
+    <td>Quảng Ngãi</td>
+  </tr>
+  <tr>
+    <td>Nguyễn Nhật Linh</td>
+    <td>0898-216086</td>
+    <td>Đà Nẵng</td>
+  </tr>
+   <tr>
+    <td>Nguyễn Kiều Sao Mai</td>
+    <td>0898234567</td>
+    <td>Quảng Nam</td>
+  </tr>
+  <tr>
+    <td>Phạm Nguyễn Như Nguyệt</td>
+    <td>0121-3456789</td>
+    <td>Quảng Ngãi</td>
+  </tr>
+  <tr>
+    <td>Nguyễn Nhật Linh</td>
+    <td>0898-216086</td>
+    <td>Đà Nẵng</td>
+  </tr>
+  <tr>
+    <td>Nguyễn Kiều Sao Mai</td>
+    <td>0898234567</td>
+    <td>Quảng Nam</td>
+  </tr>
+  <tr>
+    <td>Phạm Nguyễn Như Nguyệt</td>
+    <td>0121-3456789</td>
+    <td>Quảng Ngãi</td>
+  </tr>
+  <tr>
+    <td>Nguyễn Nhật Linh</td>
+    <td>0898-216086</td>
+    <td>Đà Nẵng</td>
+  </tr>
+   <tr>
+    <td>Nguyễn Kiều Sao Mai</td>
+    <td>0898234567</td>
+    <td>Quảng Nam</td>
+  </tr>
+  <tr>
+    <td>Phạm Nguyễn Như Nguyệt</td>
+    <td>0121-3456789</td>
+    <td>Quảng Ngãi</td>
+  </tr>
+  <tr>
+    <td>Nguyễn Nhật Linh</td>
+    <td>0898-216086</td>
+    <td>Đà Nẵng</td>
+  </tr>
+</table>
+
+   </div>
+
+   </div>
+   
+
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+body {
+    font-family:  sans-serif;
+}
+
+
+.navbar {
+	margin-bottom: 0;
+	border-radius: 0;
+}
+.sidenav {
+    height: 1000px;
+    width: 160px;
+   /* position: fixed;*/
+       
+
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    
+}
+
+.glyphicon {
+    font-size: 20px;
+
+}
+ul.notifications li{
+    width: 290px;
+}
+
+ul.message li{
+    width: 320px;
+}
+ul.notifications li .time
+{
+    font-size: 11px;
+    font-weight: bold;
+    font-style: italic;
+    position: absolute;
+    right: 5px;
+}
+ul.message li .time {
+    font-size: 11px;
+    font-weight: bold;
+    font-style: italic;
+    position: absolute;
+    right: 7px;
+
+}
+ul.notifications li .message {
+    font-size: 12px;
+}
+
+ul.notifications li.warning a {
+    color: red;
+}
+ 
+.dropdown-menu-title {
+    background: #222;
+    color: #fff;
+    padding: 8px 0px;
+    position: relative;
+
+}
+.dropdown-menu-title span {
+    margin-left: 15px;
+}
+.dropdown-menu-sub-footer {
+    background: pink;
+    position: center;
+    text-align: center;
+}
+
+
+.navbar{
+    background-color: #2e426b
+}
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 1050px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
