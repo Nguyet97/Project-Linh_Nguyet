@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head lang="vi">
+  <meta charset="utf-8">
+
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="indexcss.css">
+  <script src="chartline.js"></script>
+    <script src="main.js"></script>
+    <link rel="stylesheet" type="text/css" href="">
+	<title></title>
+</head>
+<body class="container-fluid">
+
+  <nav class="row navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a style="color: white" class="navbar-brand" href="index.html">ADMIN PROJECT</a>
+      </div>
+
+        <ul class="nav navbar-nav navbar-right">
+    	   <form class="navbar-form navbar-left" action="/action_page.php">
+  			 <div class="input-group">
+    			 <input type="text" class="form-control" placeholder="Search">
+    			   <div  class="input-group-btn">
+      				  <button class="btn btn-primary" type="submit">
+       			 	  <i class="glyphicon glyphicon-search"></i>
+      				  </button>
+    			   </div>
+  			 </div>
+		     </form>
+            <li><a  href="#"><span  class="glyphicon glyphicon-bell " > </span>
+               <sup> <span  style="background-color:  red; font-size: 10px" class="badge"> 9+</span> </sup>
+            </a></li>
+            <li><a href="#">	<span  class="glyphicon glyphicon-envelope " > </span>
+                <sup> <span  style="background-color:  red; font-size: 10px" class="badge"> 2</span> </sup>
+            </a></li>
+
+            <li><a href="login.html"><span style="font-size:20px" class="glyphicon glyphicon-log-in"></span> Sign In</a></li>
+       </ul>
+    </div>
+  </nav>
+
+  <div class="row ">
+	   <div class="col-sm-2">
+      <div class="row sidenav">
+          <a href="dashboard.html">
+  			     <span  class="glyphicon glyphicon-home"> Dashboard</span>
+          </a>
+
+          <a href="product.html"><span class="glyphicon glyphicon-shopping-cart" >  Product</span>
+          </a>
+
+          <a href="order.html">	<span class="glyphicon glyphicon-credit-card" > Oder</span> 
+
+
+          </a>
+          <a href="#contact"><span  class="glyphicon glyphicon-stats"> Themes</span>     </a>
+          <a href="login.html"><span  class="glyphicon glyphicon-log-out" > SignOut</span>     </a>
+          </a>
+       
+        
+      </div>
+    </div>
+  <div class="row">
+  	<div class="col-sm-7 col-xs-12">
+  		<div class="container main">
+		<div id="addTDL">
+			<p class="h2 my-4">Quản lí đơn hàng</p>
+			<div id="addBtn">
+				<input type="button" class="btn btn-success mb-4" id="btn_add" value="Add tasks">
+			</div>
+			<div id="formAdd">
+				<input type="text" placeholder="Input your order..." class="taskName rounded">
+				<input type="button" class="btn btn-success border-light btn_add" value="Confirm" id="added">
+				<input type="button" class="btn btn-danger border-light btn_ccl" value="Cancel" id="cancelled">
+			</div>
+		</div>
+		<div>
+			<table class="table table-striped table-light table-bordered table-hover">
+				<thead>
+					<tr class="">
+						<th class="align-middle">STT</th>
+						
+						<th>Duyệt đơn hàng</th>
+						<th>Tên sản phẩm</th>
+						<th>ACTION</th>
+					</tr>
+				</thead>
+				<tbody>
+
+				</tbody>
+			</table>
+		</div>
+	</div>
+  	</div>
+  </div>
+
+</body>
+</html>
