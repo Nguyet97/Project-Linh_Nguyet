@@ -3,23 +3,24 @@
 <head lang="vi">
   <meta charset="utf-8">
 
+ <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> 
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
   <link rel="stylesheet" type="text/css" href="indexcss.css">
   <script src="chartline.js"></script>
   <title></title>
 </head>
 <body class="container-fluid">
 
-  <nav  class="row navbar navbar-inverse">
+  <nav  class="row navbar ">
     <div class="container-fluid">
-      <div  class="navbar-header">
+      <div  class="navbar-header" >
         
-        <a style="color: white" class="navbar-brand" href="index.html">ADMIN PROJECT</a>
+        <a style="color: white; " class="navbar-brand" href="index.html">ADMIN PROJECT</a>
       </div>
 
         <ul class="nav navbar-nav navbar-right">
@@ -232,7 +233,7 @@
 
           </a>
         
-          <a href="Themes.html"><span  class="glyphicon glyphicon-stats"> Themes</span>     </a>
+          <a href="#contact"><span  class="glyphicon glyphicon-stats"> Themes</span>     </a>
         
           <a href="login.html"><span  class="glyphicon glyphicon-log-out" > SignOut</span>     </a>
           </a>
@@ -242,85 +243,71 @@
       </div>
     </div>
   <div class="col-sm-10" >
-    <div class="row">
-    <div class="col-sm-6 col-xs-12">
-      <div  >
+    <div id="dealhot" class="container-fluid">
+  <div class="text-center">
+    <h2>Pricing</h2>
+    <h4>Choose a payment plan that works for you</h4>
+  </div>
+  <div class="row slideanim">
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div style="background: pink;" class="panel-heading">
+          <h1 >Pink</h1>
+        </div>
+        <div class="panel-body">
+          <a ><img src="avatar.jpg" alt="" ></a> 
+          <p><strong>Pink tone</strong></p>
+          <p><strong>Nữ tính</strong> nhẹ nhàng</p>
+          <p><strong>Princess</strong> </p>
+        </div>
+        <div class="panel-footer">
+          <h3>Choose me!!</h3>
+          <button class="btn btn-lg">Click</button>
+        </div>
+      </div>      
+    </div>     
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div style="background: repeating-linear-gradient(pink, white 20%);" class="panel-heading">
+          <h1 >White Pinky</h1>
+        </div>
+        <div class="panel-body">
+          <a ><img src="avatar.jpg" alt="" ></a> 
+          <p><strong>White </strong></p>
+          <p><strong>Cute</strong> nhẹ nhàng</p>
+          <p><strong>Princess</strong> </p>
+        </div>
+        <div class="panel-footer">
+          <h3>Choose me!!</h3>
+          <button class="btn btn-lg">Click</button>
+        </div>
+      </div>      
+    </div>     
         
-        <canvas id="pie-chart" width="20px" height="10px"></canvas>
-      </div>
+    <div class="col-sm-4 col-xs-12">
+      <div class="panel panel-default text-center">
+        <div style="background : -webkit-linear-gradient(bottom, rgba(255,0,0,0.5), blue);" class="panel-heading">
+          <h1 >Buble Purple</h1>
+        </div>
+        <div class="panel-body">
+          <a ><img src="avatar.jpg" alt="" ></a> 
+          <p><strong>Purple tone</strong></p>
+          <p><strong>Purple</strong> nhẹ nhàng</p>
+          <p><strong>Blue</strong> </p>
+        </div>
+        <div class="panel-footer">
+          <h3>Choose me!!</h3>
+          <button class="btn btn-lg">Click</button>
+        </div>
+      </div>      
+    </div>     
+      </div>      
+    </div>    
+  </div>
     </div>
-    <div class="col-sm-6 col-xs-12">
-       <canvas id="line-chart" width="800" height="450"></canvas>
-    </div>
-       
+    
 
-<table >
-  <tr>
-    <th>Khách hàng</th>
-    <th>Liên hệ</th>
-    <th>Thành phố</th>
-  </tr>
-  <tr>
-    <td>Nguyễn Kiều Sao Mai</td>
-    <td>0898234567</td>
-    <td>Quảng Nam</td>
-  </tr>
-  <tr>
-    <td>Phạm Nguyễn Như Nguyệt</td>
-    <td>0121-3456789</td>
-    <td>Quảng Ngãi</td>
-  </tr>
-  <tr>
-    <td>Nguyễn Nhật Linh</td>
-    <td>0898-216086</td>
-    <td>Đà Nẵng</td>
-  </tr>
-   <tr>
-    <td>Nguyễn Kiều Sao Mai</td>
-    <td>0898234567</td>
-    <td>Quảng Nam</td>
-  </tr>
-  <tr>
-    <td>Phạm Nguyễn Như Nguyệt</td>
-    <td>0121-3456789</td>
-    <td>Quảng Ngãi</td>
-  </tr>
-  <tr>
-    <td>Nguyễn Nhật Linh</td>
-    <td>0898-216086</td>
-    <td>Đà Nẵng</td>
-  </tr>
-  <tr>
-    <td>Nguyễn Kiều Sao Mai</td>
-    <td>0898234567</td>
-    <td>Quảng Nam</td>
-  </tr>
-  <tr>
-    <td>Phạm Nguyễn Như Nguyệt</td>
-    <td>0121-3456789</td>
-    <td>Quảng Ngãi</td>
-  </tr>
-  <tr>
-    <td>Nguyễn Nhật Linh</td>
-    <td>0898-216086</td>
-    <td>Đà Nẵng</td>
-  </tr>
-   <tr>
-    <td>Nguyễn Kiều Sao Mai</td>
-    <td>0898234567</td>
-    <td>Quảng Nam</td>
-  </tr>
-  <tr>
-    <td>Phạm Nguyễn Như Nguyệt</td>
-    <td>0121-3456789</td>
-    <td>Quảng Ngãi</td>
-  </tr>
-  <tr>
-    <td>Nguyễn Nhật Linh</td>
-    <td>0898-216086</td>
-    <td>Đà Nẵng</td>
-  </tr>
-</table>
+
 
    </div>
 
@@ -328,5 +315,6 @@
    
 
 </body>
+
 
 </html>
